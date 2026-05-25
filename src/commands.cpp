@@ -30,7 +30,7 @@ void CommandSystem::RegisterCommands()
     commands["scan"] = [](const std::vector<std::string>& args, GameState& game)
     {
         game.terminalLines.push_back("SCANNING...");
-        game.terminalLines.push_back("CURRENT ROOM: " + game.currRoom);
+        game.terminalLines.push_back("CURRENT ROOM: " + game.player.currRoom);
     };
 
     commands["scale"] = [](const std::vector<std::string>& args, GameState& game)
@@ -56,9 +56,9 @@ void CommandSystem::RegisterCommands()
             return;
         }
         std::string target = args[1];
-        if (game.world.CanMove(game.currRoom, target))
+        if (game.world.CanMove(game.player.currRoom, target))
         {
-            game.currRoom = target;
+            game.player.currRoom = target;
             game.terminalLines.push_back("MOVED TO: " + target);
         }
         else
