@@ -117,6 +117,56 @@
       "-std=c++17",
       "-c",
       "-o",
+      "obj/x64/Debug/Metroidvania/utils.o",
+      "../../src/utils.h"
+    ],
+    "directory": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files",
+    "file": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/src/utils.h",
+    "output": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files/obj/x64/Debug/Metroidvania/utils.o"
+  },
+  {
+    "arguments": [
+      "g++",
+      "-MD",
+      "-MP",
+      "-DDEBUG",
+      "-DPLATFORM_DESKTOP",
+      "-DGRAPHICS_API_OPENGL_33",
+      "-D_WIN32",
+      "-I../../src",
+      "-I../../include",
+      "-I../external/raylib-master/src",
+      "-m64",
+      "-Wshadow",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "obj/x64/Debug/Metroidvania/world.o",
+      "../../src/world.h"
+    ],
+    "directory": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files",
+    "file": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/src/world.h",
+    "output": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files/obj/x64/Debug/Metroidvania/world.o"
+  },
+  {
+    "arguments": [
+      "g++",
+      "-MD",
+      "-MP",
+      "-DDEBUG",
+      "-DPLATFORM_DESKTOP",
+      "-DGRAPHICS_API_OPENGL_33",
+      "-D_WIN32",
+      "-I../../src",
+      "-I../../include",
+      "-I../external/raylib-master/src",
+      "-m64",
+      "-Wshadow",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
       "obj/x64/Debug/Metroidvania/commands.o",
       "../../src/commands.cpp"
     ],
@@ -173,6 +223,56 @@
     "directory": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files",
     "file": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/src/terminal.cpp",
     "output": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files/obj/x64/Debug/Metroidvania/terminal.o"
+  },
+  {
+    "arguments": [
+      "g++",
+      "-MD",
+      "-MP",
+      "-DDEBUG",
+      "-DPLATFORM_DESKTOP",
+      "-DGRAPHICS_API_OPENGL_33",
+      "-D_WIN32",
+      "-I../../src",
+      "-I../../include",
+      "-I../external/raylib-master/src",
+      "-m64",
+      "-Wshadow",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "obj/x64/Debug/Metroidvania/utils.o",
+      "../../src/utils.cpp"
+    ],
+    "directory": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files",
+    "file": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/src/utils.cpp",
+    "output": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files/obj/x64/Debug/Metroidvania/utils.o"
+  },
+  {
+    "arguments": [
+      "g++",
+      "-MD",
+      "-MP",
+      "-DDEBUG",
+      "-DPLATFORM_DESKTOP",
+      "-DGRAPHICS_API_OPENGL_33",
+      "-D_WIN32",
+      "-I../../src",
+      "-I../../include",
+      "-I../external/raylib-master/src",
+      "-m64",
+      "-Wshadow",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "obj/x64/Debug/Metroidvania/world.o",
+      "../../src/world.cpp"
+    ],
+    "directory": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files",
+    "file": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/src/world.cpp",
+    "output": "C:/Users/praji/Programming/Game Development/Raylib/Metroidvania/build/build_files/obj/x64/Debug/Metroidvania/world.o"
   },
   {
     "arguments": [

@@ -3,6 +3,7 @@
 #include <sstream>
 #include <algorithm>
 #include <cctype>
+#include "utils.h"
 
 std::vector<std::string> Tokenize(const std::string& str)
 {
@@ -14,11 +15,6 @@ std::vector<std::string> Tokenize(const std::string& str)
         tokens.push_back(word);
     }
     return tokens;
-}
-std::string str_tolower(std::string s)
-{
-    std::transform(s.begin(), s.end(), s.begin(),[](unsigned char c){ return std::tolower(c); });
-    return s;
 }
 
 void CommandSystem::RegisterCommands()
@@ -45,11 +41,29 @@ void CommandSystem::RegisterCommands()
             return;
         }
         std::string s = args[1];
-        s = str_tolower(s);
         if(s.compare("standard") == 0 || s.compare("small") == 0 || s.compare("massive") == 0)
         {
             game.scaleMode = args[1];
             game.terminalLines.push_back("SCALE MODE SET TO: " + args[1]);
+        }
+    };
+
+    commands["move"] = [](const std::vector<std::string>& args, GameState& game)
+    {
+        if (args.size() < 2)
+        {
+            game.terminalLines.push_back("SPECIFY MOVEMENT TARGET.");
+            return;
+        }
+        std::string target = args[1];
+        if (game.world.CanMove(game.currRoom, target))
+        {
+            game.currRoom = target;
+            game.terminalLines.push_back("MOVED TO: " + target);
+        }
+        else
+        {
+            game.terminalLines.push_back("CANNOT MOVE THERE.");
         }
     };
 }

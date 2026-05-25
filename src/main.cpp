@@ -11,6 +11,9 @@ int main()
     SetTargetFPS(60);
     Terminal terminal;
     GameState gameState;
+    gameState.world.AddEdge("docking_bay", "plaza");
+    gameState.world.AddEdge("right_atrium", "plaza");
+    gameState.world.AddEdge("left_atrium", "plaza");
     CommandSystem commandSystem;
     commandSystem.RegisterCommands();
     while (!WindowShouldClose())
